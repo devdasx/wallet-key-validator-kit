@@ -39,6 +39,8 @@ When npm registry publishing is configured:
 npm install wallet-key-validator-kit
 ```
 
+The npm package is designed to be published from GitHub releases. Add an npm automation token as the repository secret `NPM_TOKEN`; after that, published GitHub releases trigger `.github/workflows/npm-publish.yml` and npm receives the package built from the tagged GitHub source.
+
 Use the CLI without installing globally:
 
 ```bash
