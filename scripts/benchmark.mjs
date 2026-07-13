@@ -1,0 +1,1 @@
+import('../src/index.js').then(m=>{const sample='KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qYjgd9M7rFU73sVHnoWn';let n=0,t=Date.now();while(Date.now()-t<1000){m.validateWif(sample,{chain:'bitcoin'});n++}console.log(JSON.stringify({metric:'WIF validation ops/sec',ops:n},null,2));});

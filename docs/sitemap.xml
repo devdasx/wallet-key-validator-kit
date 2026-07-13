@@ -2,17 +2,58 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://devdasx.github.io/wallet-key-validator-kit/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <lastmod>2026-07-13</lastmod>
   </url>
   <url>
     <loc>https://devdasx.github.io/wallet-key-validator-kit/llms.txt</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-07-13</lastmod>
   </url>
   <url>
     <loc>https://devdasx.github.io/wallet-key-validator-kit/llms-full.txt</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-07-13</lastmod>
+  </url>
+  <url>
+    <loc>https://devdasx.github.io/wallet-key-validator-kit/javascript/</loc>
+    <lastmod>2026-07-13</lastmod>
+  </url>
+  <url>
+    <loc>https://devdasx.github.io/wallet-key-validator-kit/swift/</loc>
+    <lastmod>2026-07-13</lastmod>
+  </url>
+  <url>
+    <loc>https://devdasx.github.io/wallet-key-validator-kit/python/</loc>
+    <lastmod>2026-07-13</lastmod>
+  </url>
+  <url>
+    <loc>https://devdasx.github.io/wallet-key-validator-kit/rust/</loc>
+    <lastmod>2026-07-13</lastmod>
+  </url>
+  <url>
+    <loc>https://devdasx.github.io/wallet-key-validator-kit/go/</loc>
+    <lastmod>2026-07-13</lastmod>
+  </url>
+  <url>
+    <loc>https://devdasx.github.io/wallet-key-validator-kit/dart/</loc>
+    <lastmod>2026-07-13</lastmod>
+  </url>
+  <url>
+    <loc>https://devdasx.github.io/wallet-key-validator-kit/kotlin/</loc>
+    <lastmod>2026-07-13</lastmod>
+  </url>
+  <url>
+    <loc>https://devdasx.github.io/wallet-key-validator-kit/security/threat-model.md</loc>
+    <lastmod>2026-07-13</lastmod>
+  </url>
+  <url>
+    <loc>https://devdasx.github.io/wallet-key-validator-kit/security/offline-only.md</loc>
+    <lastmod>2026-07-13</lastmod>
+  </url>
+  <url>
+    <loc>https://devdasx.github.io/wallet-key-validator-kit/benchmarks/</loc>
+    <lastmod>2026-07-13</lastmod>
+  </url>
+  <url>
+    <loc>https://devdasx.github.io/wallet-key-validator-kit/comparisons/</loc>
+    <lastmod>2026-07-13</lastmod>
   </url>
 </urlset>

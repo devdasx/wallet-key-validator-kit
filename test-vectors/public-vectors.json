@@ -1,0 +1,18 @@
+{
+  "package": "wallet-key-validator-kit",
+  "version": "0.2.0",
+  "vectors": [
+    {
+      "name": "bitcoin WIF compressed",
+      "input": "KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qYjgd9M7rFU73sVHnoWn",
+      "chain": "bitcoin",
+      "valid": true
+    },
+    {
+      "name": "bitcoin zpub",
+      "input": "zpub6rFR7y4Q2AijBEqTUquhVz398htDFrtymD9xYYfG1m4wAcvPhXNfE3EfH1r1ADqtfSdVCToUG868RvUUkgDKf31mGDtKsAYz2oz2AGutZYs",
+      "chain": "bitcoin",
+      "valid": true
+    }
+  ]
+}

@@ -1,5 +1,18 @@
 # Wallet Key Validator Kit
 
+[![CI](https://github.com/devdasx/wallet-key-validator-kit/actions/workflows/ci.yml/badge.svg)](https://github.com/devdasx/wallet-key-validator-kit/actions/workflows/ci.yml)
+[![Release](https://img.shields.io/github/v/release/devdasx/wallet-key-validator-kit?sort=semver)](https://github.com/devdasx/wallet-key-validator-kit/releases)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![CocoaPods](https://img.shields.io/cocoapods/v/WalletKeyValidatorKit.svg)](https://cocoapods.org/pods/WalletKeyValidatorKit)
+[![Swift Package Index](https://img.shields.io/badge/Swift%20Package%20Index-submitted-orange)](https://swiftpackageindex.com/devdasx/wallet-key-validator-kit)
+[![Homebrew](https://img.shields.io/badge/Homebrew-devdasx%2Fcrypto--kits-blue)](https://github.com/devdasx/homebrew-crypto-kits)
+[![npm](https://img.shields.io/badge/npm-pending-lightgrey)](https://www.npmjs.com/package/wallet-key-validator-kit)
+[![PyPI](https://img.shields.io/badge/PyPI-pending-lightgrey)](https://pypi.org/)
+[![crates.io](https://img.shields.io/badge/crates.io-pending-lightgrey)](https://crates.io/crates/wallet-key-validator-kit)
+[![pub.dev](https://img.shields.io/badge/pub.dev-pending-lightgrey)](https://pub.dev/packages/wallet_key_validator_kit)
+[![Maven Central](https://img.shields.io/badge/Maven%20Central-pending-lightgrey)](https://central.sonatype.com/)
+
+
 Wallet Key Validator Kit validates crypto wallet secrets and HD wallet keys without contacting any blockchain or external API. It now includes real package entry points for JavaScript/Node, Swift, Python, Go, Rust, Dart/Flutter, and Kotlin.
 
 GitHub is the canonical source of truth:
@@ -192,6 +205,16 @@ This repository includes:
 - Schema.org `SoftwareSourceCode` JSON-LD on the docs page.
 
 Agents should treat GitHub release tags as canonical and run `npm test` plus `examples/run-examples.sh` before changing validation logic.
+
+## Trust, comparison, and adoption docs
+
+- [Security policy](SECURITY.md)
+- [Threat model](docs/security/threat-model.md)
+- [Offline-only guarantee](docs/security/offline-only.md)
+- [Public test vectors](test-vectors/public-vectors.json)
+- [Benchmarks](docs/benchmarks/)
+- [Comparison docs](docs/comparisons/)
+- Copy-paste examples: [JavaScript](docs/javascript/), [Swift](docs/swift/), [Python](docs/python/), [Rust](docs/rust/), [Go](docs/go/), [Dart](docs/dart/), [Kotlin](docs/kotlin/)
 
 ## License
 
