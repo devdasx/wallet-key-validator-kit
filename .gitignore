@@ -2,4 +2,13 @@ node_modules/
 npm-debug.log*
 .DS_Store
 coverage/
+__pycache__/
+*.pyc
+.build/
+.dart_tool/
+.gradle/
+build/
+target/
+Cargo.lock
+pubspec.lock
 .env

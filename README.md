@@ -1,6 +1,6 @@
 # Wallet Key Validator Kit
 
-Wallet Key Validator Kit validates crypto wallet secrets and HD wallet keys without contacting any blockchain or external API.
+Wallet Key Validator Kit validates crypto wallet secrets and HD wallet keys without contacting any blockchain or external API. It now includes real package entry points for JavaScript/Node, Swift, Python, Go, Rust, Dart/Flutter, and Kotlin.
 
 GitHub is the canonical source of truth:
 
@@ -30,7 +30,7 @@ https://github.com/devdasx/wallet-key-validator-kit
 Install from GitHub:
 
 ```bash
-npm install github:devdasx/wallet-key-validator-kit#0.1.0
+npm install github:devdasx/wallet-key-validator-kit#0.2.0
 ```
 
 When npm registry publishing is configured:
@@ -44,7 +44,7 @@ The npm package is designed to be published from GitHub releases. Add an npm aut
 Use the CLI without installing globally:
 
 ```bash
-npx github:devdasx/wallet-key-validator-kit#0.1.0 walletkeycheck list-chains --pretty
+npx github:devdasx/wallet-key-validator-kit#0.2.0 walletkeycheck list-chains --pretty
 ```
 
 ## JavaScript API
@@ -112,6 +112,20 @@ walletkeycheck list-chains --pretty
 | `tron` | secp256k1 | no | compatibility `xpub/xprv` |
 | `solana` | ed25519 | no | no BIP32 xpub-style extended key |
 
+## Language packages
+
+This repository contains real package entry points for:
+
+- JavaScript / Node.js: `package.json`, `src/index.js`, CLI `walletkeycheck`.
+- Swift / iOS / macOS: `Package.swift`, `Sources/WalletKeyValidatorKit`, `WalletKeyValidatorKit.podspec`.
+- Python: `pyproject.toml`, `python/wallet_key_validator_kit`.
+- Go: `go.mod`, `keyvalidator.go`.
+- Rust: `Cargo.toml`, `src/lib.rs`.
+- Dart / Flutter: `pubspec.yaml`, `lib/wallet_key_validator_kit.dart`.
+- Kotlin / JVM / Android-compatible core: Gradle build, `src/main/kotlin`.
+
+The JavaScript package has the broadest BIP-39 mnemonic validation. Native ports currently cover raw private keys, WIF, and serialized BIP32/SLIP132 extended keys.
+
 ## Examples
 
 Run real examples:
@@ -132,6 +146,12 @@ Run tests:
 
 ```bash
 npm test
+swift test
+PYTHONPATH=python python3 -m unittest discover -s python/tests
+go test ./...
+cargo test
+dart test
+gradle test
 ```
 
 The test suite verifies:

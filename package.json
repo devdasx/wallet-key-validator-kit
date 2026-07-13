@@ -1,6 +1,6 @@
 {
   "name": "wallet-key-validator-kit",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Validate BIP39 mnemonics, private keys, WIF keys, and xpub/xprv/ypub/yprv/zpub/zprv HD wallet extended keys for Bitcoin, Ethereum, Solana, Dogecoin, Litecoin, and more.",
   "type": "module",
   "main": "./src/index.js",
@@ -13,7 +13,7 @@
     "./base58": "./src/base58.js"
   },
   "files": [
-    "src",
+    "src/*.js",
     "bin",
     "README.md",
     "LICENSE",
