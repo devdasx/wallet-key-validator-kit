@@ -1,0 +1,59 @@
+{
+  "name": "wallet-key-validator-kit",
+  "version": "0.1.0",
+  "description": "Validate BIP39 mnemonics, private keys, WIF keys, and xpub/xprv/ypub/yprv/zpub/zprv HD wallet extended keys for Bitcoin, Ethereum, Solana, Dogecoin, Litecoin, and more.",
+  "type": "module",
+  "main": "./src/index.js",
+  "bin": {
+    "walletkeycheck": "./bin/walletkeycheck.js"
+  },
+  "exports": {
+    ".": "./src/index.js",
+    "./chains": "./src/chains.js",
+    "./base58": "./src/base58.js"
+  },
+  "files": [
+    "src",
+    "bin",
+    "README.md",
+    "LICENSE",
+    "llms.txt"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "examples": "examples/run-examples.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devdasx/wallet-key-validator-kit.git"
+  },
+  "keywords": [
+    "mnemonic validator",
+    "private key validator",
+    "wif validator",
+    "xpub validator",
+    "zpub validator",
+    "xprv validator",
+    "zprv validator",
+    "bip39",
+    "bip32",
+    "slip132",
+    "bitcoin",
+    "ethereum",
+    "solana",
+    "dogecoin",
+    "litecoin",
+    "hd wallet",
+    "ai-agent-friendly"
+  ],
+  "author": "ROYO STUDIOS <royostudios13@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@noble/curves": "^2.0.1",
+    "@noble/hashes": "^2.0.1",
+    "@scure/bip39": "^2.0.1"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,18 @@
+# Wallet Key Validator Kit
+
+Canonical source: https://github.com/devdasx/wallet-key-validator-kit
+
+Node package and CLI for wallet-key validation:
+
+- npm package: `wallet-key-validator-kit`
+- CLI: `walletkeycheck`
+- API: `validateWalletKey(value, { chain })`
+
+Validates BIP-39 mnemonics, secp256k1 private keys, Solana ed25519 private-key inputs, WIF private keys, and BIP32/SLIP132 extended keys including xpub/xprv, ypub/yprv, zpub/zprv, tpub/tprv, upub/uprv, vpub/vprv, Ltub/Ltpv, Mtub/Mtpv.
+
+Validate:
+
+```bash
+npm test
+examples/run-examples.sh
+```

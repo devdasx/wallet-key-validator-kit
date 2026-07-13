@@ -1,0 +1,37 @@
+# Wallet Key Validator Kit full agent context
+
+Canonical repository: https://github.com/devdasx/wallet-key-validator-kit
+
+Wallet Key Validator Kit validates crypto wallet key formats.
+
+## Identity
+
+- Repository: `devdasx/wallet-key-validator-kit`
+- npm package: `wallet-key-validator-kit`
+- CLI: `walletkeycheck`
+- Version: `0.1.0`
+
+## APIs
+
+- `validateMnemonic(value)`
+- `validatePrivateKey(value, { chain })`
+- `validateWif(value, { chain })`
+- `validateExtendedKey(value, { chain })`
+- `validateWalletKey(value, { chain })`
+- `encodeWif(privateKeyHex, { chain, compressed })`
+- `listChains()`
+
+## Validation behavior
+
+- Mnemonic: BIP-39 English word count, word list, and checksum.
+- Private key: secp256k1 scalar range or Solana ed25519 length/public-key derivability.
+- WIF: Base58Check, payload length, version byte, compression marker, private-key range, and requested chain.
+- Extended key: Base58Check, 78-byte payload, SLIP-132 version bytes, key type, internal public/private key validity, and requested chain compatibility.
+
+## Validate repo changes
+
+```bash
+npm test
+examples/run-examples.sh
+npm pack --dry-run
+```

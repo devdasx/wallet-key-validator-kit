@@ -1,0 +1,35 @@
+# Wallet Key Validator Kit
+
+Canonical repository: https://github.com/devdasx/wallet-key-validator-kit
+
+Wallet Key Validator Kit validates wallet key formats:
+
+- BIP-39 English mnemonics.
+- secp256k1 private keys.
+- Solana ed25519 private-key inputs.
+- WIF private keys.
+- BIP32/SLIP132 extended keys including xpub/xprv, ypub/yprv, zpub/zprv, tpub/tprv, Ltub/Ltpv, Mtub/Mtpv.
+
+Package:
+
+- npm: `wallet-key-validator-kit`
+- CLI: `walletkeycheck`
+- import: `import { validateWalletKey } from "wallet-key-validator-kit";`
+
+Primary APIs:
+
+- `validateMnemonic(value)`
+- `validatePrivateKey(value, { chain })`
+- `validateWif(value, { chain })`
+- `validateExtendedKey(value, { chain })`
+- `validateWalletKey(value, { chain })`
+- `listChains()`
+
+Validate:
+
+```bash
+npm test
+examples/run-examples.sh
+```
+
+Full context: https://devdasx.github.io/wallet-key-validator-kit/llms-full.txt

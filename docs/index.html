@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wallet Key Validator Kit - mnemonic WIF xpub zpub private key validator</title>
+    <meta name="description" content="Validate BIP39 mnemonics, private keys, WIF keys, xpub, ypub, zpub, xprv, yprv, zprv, and HD wallet keys for Bitcoin, Ethereum, Solana, Dogecoin, Litecoin, and more.">
+    <link rel="canonical" href="https://devdasx.github.io/wallet-key-validator-kit/">
+    <link rel="alternate" type="text/plain" href="https://devdasx.github.io/wallet-key-validator-kit/llms.txt">
+    <meta property="og:title" content="Wallet Key Validator Kit">
+    <meta property="og:description" content="Validate mnemonic phrases, private keys, WIF keys, xpub/zpub/xprv/zprv HD wallet keys, and multi-chain wallet formats.">
+    <meta property="og:url" content="https://devdasx.github.io/wallet-key-validator-kit/">
+    <meta property="og:type" content="website">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareSourceCode",
+        "name": "Wallet Key Validator Kit",
+        "codeRepository": "https://github.com/devdasx/wallet-key-validator-kit",
+        "programmingLanguage": "JavaScript",
+        "runtimePlatform": "Node.js",
+        "license": "https://github.com/devdasx/wallet-key-validator-kit/blob/main/LICENSE",
+        "keywords": ["mnemonic validator", "private key validator", "WIF validator", "xpub validator", "zpub validator", "xprv validator", "zprv validator", "BIP39", "BIP32", "SLIP132", "Bitcoin", "Ethereum", "Solana", "Dogecoin", "Litecoin"],
+        "softwareVersion": "0.1.0"
+      }
+    </script>
+    <style>
+      body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.6; max-width: 920px; margin: 0 auto; padding: 32px 20px; color: #16202a; }
+      code, pre { background: #f3f5f7; border-radius: 8px; }
+      pre { overflow: auto; padding: 16px; }
+      code { padding: 2px 5px; }
+      .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
+      .card { border: 1px solid #d8dee4; border-radius: 12px; padding: 16px; }
+      a { color: #0757c2; }
+    </style>
+  </head>
+  <body>
+    <h1>Wallet Key Validator Kit</h1>
+    <p>Validate BIP-39 mnemonics, private keys, WIF keys, xpub/ypub/zpub, xprv/yprv/zprv, and HD wallet key formats for Bitcoin, Ethereum, Solana, Dogecoin, Litecoin, and more.</p>
+    <p><a href="https://github.com/devdasx/wallet-key-validator-kit">GitHub source</a> · <a href="llms.txt">llms.txt</a> · <a href="llms-full.txt">llms-full.txt</a></p>
+    <div class="grid">
+      <section class="card"><strong>Mnemonic</strong><br>BIP-39 word count, word list, and checksum validation.</section>
+      <section class="card"><strong>Private keys</strong><br>secp256k1 and Solana ed25519 format validation.</section>
+      <section class="card"><strong>WIF</strong><br>Base58Check checksum, version byte, compression marker, and chain matching.</section>
+      <section class="card"><strong>Extended keys</strong><br>BIP32 and SLIP-132 xpub/xprv/ypub/yprv/zpub/zprv validation.</section>
+    </div>
+    <h2>Install</h2>
+    <pre><code>npm install github:devdasx/wallet-key-validator-kit#0.1.0</code></pre>
+    <h2>Use</h2>
+    <pre><code>import { validateWalletKey } from "wallet-key-validator-kit";
+
+const result = validateWalletKey("zpub...", { chain: "bitcoin" });
+console.log(result.valid, result.details.kind);</code></pre>
+    <h2>CLI</h2>
+    <pre><code>walletkeycheck mnemonic "abandon abandon ..." --pretty
+walletkeycheck wif KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qYjgd9M7rFU73sVHnoWn --chain bitcoin --pretty
+walletkeycheck extended-key "zpub..." --chain bitcoin --pretty</code></pre>
+  </body>
+</html>
